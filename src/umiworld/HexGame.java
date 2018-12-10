@@ -3,12 +3,16 @@ package umiworld;
 import umiworld.model.Hex;
 import umiworld.model.HexMap;
 import umiworld.rendering.DrawingPanel;
+import umiworld.rendering.InformationPanel;
 
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
+import java.awt.image.ImageObserver;
 
 import static umiworld.model.HexMap.*;
+import static umiworld.rendering.ScreenInformation.HEIGHT;
+import static umiworld.rendering.ScreenInformation.WIDTH;
 
 /**********************************
  This is the main class of a Java program to play a game based on hexagonal tiles.
@@ -57,20 +61,24 @@ public class HexGame
 
     private void createAndShowGUI()
     {
-        DrawingPanel panel = new DrawingPanel();
+        DrawingPanel drawingPanel = new DrawingPanel();
+        InformationPanel informationPanel = new InformationPanel();
+        informationPanel.setText("Text my hex game text field");
 
 
 //        JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("Hex Testing 4");
         frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
         Container content = frame.getContentPane();
-        JPanel aggregationFrame = new JPanel(new GridBagLayout());
-        aggregationFrame.add(panel);
-//        aggregationFrame.add(new JLabel("Enter username:"));
-        content.add(panel);
+        JPanel aggregationFrame = new JPanel();
+        aggregationFrame.add(drawingPanel);
+        aggregationFrame.add(informationPanel);
+        content.add(aggregationFrame);
         //this.add(panel);  -- cannot be done in a static context
         //for hexes in the FLAT orientation, the height of a 10x10 grid is 1.1764 * the width. (from h / (s+t))
-        frame.setSize( (int)(SCRSIZE/1.23), SCRSIZE);
+        frame.pack();
+        frame.setSize(WIDTH, HEIGHT);
+        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setResizable(false);
         frame.setLocationRelativeTo( null );
         frame.setVisible(true);

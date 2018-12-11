@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.Random;
 
 import static umiworld.model.HexMap.BSIZE;
 import static umiworld.model.HexMap.COLOURBACK;
@@ -74,7 +75,11 @@ public class DrawingPanel extends JPanel
 				} */
 
             //What do you want to do when a hexagon is clicked?
-            board[p.x][p.y].setInfo("X");
+            if (board[p.x][p.y].getInfo() == null) {
+                board[p.x][p.y].setInfo("" + (new Random()).nextInt(10));
+            } else {
+                GameScreen.informationPanel.setText(board[p.x][p.y].getInfo());
+            }
             repaint();
         }
     } //end of MyMouseListener class

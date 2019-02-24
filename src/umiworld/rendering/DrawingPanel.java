@@ -8,9 +8,9 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Random;
 
-import static umiworld.model.HexMap.BSIZE;
-import static umiworld.model.HexMap.COLOURBACK;
-import static umiworld.model.HexMap.board;
+import static umiworld.model.map.HexMap.BSIZE;
+import static umiworld.model.map.HexMap.COLOURBACK;
+import static umiworld.model.map.HexMap.board;
 
 public class DrawingPanel extends JPanel
 {

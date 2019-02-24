@@ -1,11 +1,9 @@
 package umiworld;
 
-import umiworld.model.Hex;
-import umiworld.model.HexMap;
-import umiworld.rendering.DrawingPanel;
+import umiworld.model.map.Hex;
+import umiworld.model.map.HexMap;
 
 import java.awt.*;
-import javax.swing.*;
 
 /* This is a companion class to hexgame.java. It handles all of the mechanics related to hexagon grids. */
 

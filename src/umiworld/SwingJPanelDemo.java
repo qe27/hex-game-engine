@@ -1,6 +1,6 @@
 package umiworld;
 
-import umiworld.model.Hex;
+import umiworld.model.map.Hex;
 import umiworld.rendering.DrawingPanel;
 
 import java.awt.*;
@@ -15,8 +15,8 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
-import static umiworld.model.HexMap.*;
-import static umiworld.model.HexMap.board;
+import static umiworld.model.map.HexMap.*;
+import static umiworld.model.map.HexMap.board;
 
 /**
  * This program demonstrates how to use JPanel in Swing.

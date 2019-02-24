@@ -1,4 +1,4 @@
-package umiworld.model;
+package umiworld.model.map;
 
 public class Hex {
     private Integer x,y;

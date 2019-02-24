@@ -1,4 +1,4 @@
-package umiworld.model;
+package umiworld.model.map;
 
 import java.awt.*;
 
@@ -18,4 +18,8 @@ public class HexMap {
     public static int SCRSIZE = HEXSIZE * (BSIZE + 1) + BORDERS*3; //screen size (vertical dimension).
 
     public static Hex[][] board = new Hex[BSIZE][BSIZE];
+
+    public static void endTurn() {
+        return;
+    }
 }

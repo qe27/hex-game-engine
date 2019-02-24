@@ -1,19 +1,11 @@
 package umiworld;
 
-import umiworld.model.Hex;
-import umiworld.model.HexMap;
-import umiworld.rendering.DrawingPanel;
+import umiworld.model.map.Hex;
 import umiworld.rendering.GameScreen;
-import umiworld.rendering.InformationPanel;
 
-import java.awt.*;
 import javax.swing.*;
-import java.awt.event.*;
-import java.awt.image.ImageObserver;
 
-import static umiworld.model.HexMap.*;
-import static umiworld.rendering.ScreenInformation.HEIGHT;
-import static umiworld.rendering.ScreenInformation.WIDTH;
+import static umiworld.model.map.HexMap.*;
 
 /**********************************
  This is the main class of a Java program to play a game based on hexagonal tiles.

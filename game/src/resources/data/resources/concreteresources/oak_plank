@@ -1,0 +1,4 @@
+name=OAK_PLANK
+volume=2
+material=OAK
+flags=PLANK,BUILD_MATERIAL

@@ -78,7 +78,7 @@ public class DrawingPanel extends JPanel
             if (board[p.x][p.y].getInfo() == null) {
                 board[p.x][p.y].setInfo("" + (new Random()).nextInt(10));
             } else {
-                GameScreen.informationPanel.setText(board[p.x][p.y].getInfo());
+//                GameScreen.informationPanel.setText(board[p.x][p.y].getInfo());
             }
             repaint();
         }

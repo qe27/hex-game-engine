@@ -18,7 +18,7 @@ public class GameScreen {
     {
         drawingPanel = new DrawingPanel();
         informationPanel = new InformationPanel();
-        informationPanel.setText("aaaa");
+//        informationPanel.setText("aaaa");
         frame = new JFrame("Hex Testing 4");
         frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
         Container content = frame.getContentPane();

@@ -2,12 +2,11 @@ package umiworld.model.map.util.prerequisites;
 
 import umiworld.model.Player;
 import umiworld.model.map.structures.Structure;
-import umiworld.model.resources.ResourceType;
 
 import java.util.Map;
 
-public class PricePrerequisite implements StructurePrerequisite {
-    StructurePrerequisiteType prerequisiteType = StructurePrerequisiteType.PRICE;
+public class PricePrerequisite /*implements StructurePrerequisite*/ {
+    /*StructurePrerequisiteType prerequisiteType = StructurePrerequisiteType.PRICE;
     Map<ResourceType, Integer> price;
 
 
@@ -23,5 +22,5 @@ public class PricePrerequisite implements StructurePrerequisite {
             }
         }
         return true;
-    }
+    }*/
 }
